@@ -34,3 +34,32 @@ console.log(test == bis);
 console.log(test === bis);
 
 // 06 - Condition
+var limit = 50;
+var score = 64;
+if (score >= limit) {
+    console.log("Ok good !")
+} else {
+    console.log("Oh nooo...");
+}
+
+var limit = 100;
+var score = 230;
+if (score >= limit) {
+    console.log("Ok good !")
+} else {
+    console.log("Oh nooo...");
+}
+
+var limit = 100;
+var score = 30;
+if (score >= limit) {
+    console.log("Ok good !")
+} else {
+    console.log("Oh nooo...");
+}
+
+// 07 - Condition II
+var password = "azerty";
+if (password.length > 5) {
+    console.log("The password is secure");
+}
