@@ -34,8 +34,9 @@ var limit = 10;
 for (var i = 0; i <= limit; i++) {
     console.log(i);
     var total = i + total;
-    console.log(total);
+
 }
+console.log(total);
 
 
 // 06 - Reverse
