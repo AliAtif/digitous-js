@@ -33,12 +33,25 @@ var total = 0;
 var limit = 10;
 for (var i = 0; i <= limit; i++) {
     console.log(i);
-    var total = i + total;
+    var total = i + " + " + total;
 
 }
+
 console.log(total);
+
 
 
 // 06 - Reverse
 // var sentence = "Hello Konexio !";
-// for ()
+// var words = sentence.split("");
+// console.log(words);
+// sentence.sort();
+// console.log(sentence);
+
+// for (var i = 0; i <= words.length; i++) {
+
+//     console.log(i)
+// }
+
+
+// Bonus
