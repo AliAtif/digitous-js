@@ -7,7 +7,7 @@ console.log(float);
 
 // 02 - Convert
 var basic = 34;
-var stringified = basic;
+var stringified = basic.toString();
 console.log(stringified)
     //=======================
 
@@ -36,6 +36,11 @@ console.log(test < bis);
 console.log(test = bis);
 console.log(test == bis);
 console.log(test === bis);
+console.log(test >= bis);
+console.log(test <= bis);
+console.log(test != bis);
+console.log(test !== bis);
+
 //========================
 
 // 06 - Condition
