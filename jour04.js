@@ -27,3 +27,14 @@ console.log(cat.age);
 console.log(cat2.isCute);
 
 // 03 - Even
+function checkIfEven(num) {
+    if (num % 2 === 0) {
+        console.log("even")
+    } else {
+        console.log("odd")
+    }
+}
+checkIfEven(100)
+checkIfEven(95)
+checkIfEven(110)
+checkIfEven(213)
