@@ -47,9 +47,9 @@ function compare(num1, num2) {
         console.log("num1 is bigger")
     } else if (num2 > num1) {
         console.log("num2 is bigger")
-    } // else(num1 == num2); {
-    //         console.log("both are the same")
-    //     }
+    } // else(num1 === num2); {
+    //     console.log("both are the same")
+    // }
 }
 compare(15, 25);
 compare(77, 76);
@@ -67,3 +67,19 @@ function addUp(num) {
     console.log(somme)
 }
 addUp(12)
+
+
+// 06 - Time
+
+function format(num) {
+    var heures = Math.floor(num / 3600);
+    var minutes = Math.floor((num - 3600) / 60);
+    var secondes = Math.floor((num - 3600) - 60);
+    // console.log(heures)
+    // console.log(minutes)
+    // console.log(secondes)
+
+    console.log(`${heures} : ${minutes} : ${secondes}`)
+
+}
+format(3700)
