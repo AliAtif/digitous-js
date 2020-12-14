@@ -13,11 +13,7 @@ if (cat.isCute == true) {
 
 
 // 02 - Combine
-var cat = {
-    name: "Garfield",
-    age: 3,
-    isCute: true,
-}
+
 var cat2 = {
     name: "Mimi",
     age: 4,
@@ -29,3 +25,5 @@ cats = Object.assign(cat, cat2);
 
 console.log(cat.age);
 console.log(cat2.isCute);
+
+// 03 - Even
