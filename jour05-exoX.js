@@ -16,3 +16,6 @@ function multiply(num) {
 }
 console.log(process.argv);
 multiply(process.argv[2]);
+
+
+// 03 - Separate Table
