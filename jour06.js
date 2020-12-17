@@ -34,7 +34,6 @@ console.log(calculateAge("1988-11-17"));
 
 //========================================================
 
-
 // 03 - Validator (prompt)
 var prompt = require("prompt");
 
