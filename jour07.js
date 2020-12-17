@@ -3,6 +3,7 @@
 function sortLetters(str) {
     console.log(str);
     var letters = str.split("");
+    console.log(letters);
     console.log(letters.sort());
     console.log(letters.sort().join(""));
 
