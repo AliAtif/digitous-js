@@ -79,11 +79,26 @@ console.log(shortNames(longNames))
 
 // 04 - Filter Numbers
 
-var array = [1, "toto", 34, "javascript", 8];
+// var array = [1, "toto", 34, "javascript", 8];
 
-var numbers = function(array){
-  return array.filter(function(number){
-      return number >0;
-  }); 
-}; 
-console.log(numbers(array))
+// var numbers = function(array){
+//   return array.filter(function(number){
+//       return number >0;
+//   }); 
+// }; 
+// console.log(numbers(array))
+
+//==============================================================
+
+//  05 - Filter Even
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+var even = function(numbers){
+    return numbers.filter(function(num){
+        return num % 2 === 0 ;
+
+    });
+
+};
+console.log(even(numbers))
