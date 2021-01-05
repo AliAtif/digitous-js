@@ -7,10 +7,10 @@ request.get( "https://restcountries.eu/rest/v1/all", function (err, res, body) {
     // console.log(err);
     // console.log(res.statusCode);
     // console.log(body);
-    console.log(getCountries);
+    // console.log(getCountries);
    countriesNames = getCountries .map(function(element){
         return element.name
-   });console.log( countriesNames);
+   });console.log( countriesNames.join('-'));
     
 });
 
