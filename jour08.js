@@ -66,11 +66,14 @@ console.log(doubles);
 	}
 ] 
 
-var shortNames = longNames.map(function(element){
-	return  "name : " + element.firstName + "" + element.lastName
-}); 
+console.log("Type de longnames:", typeof longNames[0].firstName);
+console.log(longNames[0].lastName);
 
-console.log(shortNames)
+var shortNames = longNames.map(function(element) {
+   return {
+       name: `${element.firstName} ${element.lastName}`
+   };
+});
 
 //===============================================================
 
@@ -78,10 +81,13 @@ console.log(shortNames)
 
 var array = [1, "toto", 34, "javascript", 8];
 
-var numbers = array.filter(function(number){
-	return number > 0;
-});
-console.log(numbers)
+var array = [1, "toto", 34, "javascript", 8, -5];
+var numbers = array.filter(function(element) {
+    //return typeof element === "number";
+    //return element > 0;
+    //return isNaN(element) === false;
+    return parseInt(element) === element;
+})
 
 //==============================================================
 
@@ -98,34 +104,39 @@ console.log(even)
 
 // 06 - Cakes
 
-// var cakes = [
-// 	{
-// 		name: "cake",
-// 		flavor: "vanilla",
-// 		status: "available"
-// 	},
-// 	{
-// 		name: "brownie",
-// 		flavor: "chocolate",
-// 		status: "available"
-// 	},
-// 	{
-// 		name: "pie",
-// 		flavor: "strawberry",
-// 		status: "available"
-// 	},
-// 	{
-// 		name: "muffin",
-// 		flavor: "pistachio",
-// 		status: "available"
-// 	},
-// 	{
-// 		name: "donut",
-// 		flavor: "chocolate",
-// 		status: "available"
-// 	},
-// ]
-//  var cakes2 = cakes.filter(function( ){
-// 	 return  
+var cakes = [
+	{
+		name: "cake",
+		flavor: "vanilla",
+		status: "available"
+	},
+	{
+		name: "brownie",
+		flavor: "chocolate",
+		status: "available"
+	},
+	{
+		name: "pie",
+		flavor: "strawberry",
+		status: "available"
+	},
+	{
+		name: "muffin",
+		flavor: "pistachio",
+		status: "available"
+	},
+	{
+		name: "donut",
+		flavor: "chocolate",
+		status: "available"
+	},
+]
 
-//  });
+var chocolatesCake = cakes.filter(function(element) {
+   return element.flavor === "chocolate";
+}).map(function(element) {
+   element.status = "Sold out !";
+   return element;
+});
+
+console.log(chocolatesCake);
